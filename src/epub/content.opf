@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:identifier id="uid">url:https://github.com/MortgageHunter/josef-stalin_trotskyism-or-leninism</dc:identifier>
+		<dc:identifier id="uid">josef-stalin/trotskyism-or-leninism</dc:identifier>
+		<dc:identifier id="url">url:https://github.com/MortgageHunter/josef-stalin_trotskyism-or-leninism</dc:identifier>
 		<dc:date>2024-06-11T22:48:00Z</dc:date>
 		<meta property="dcterms:modified">2024-06-11T22:48:00Z</meta>
 		<dc:rights>This ebook is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>.</dc:rights>
@@ -34,12 +35,15 @@
 		<dc:creator id="author">Josef Stalin</dc:creator>
 		<meta property="file-as" refines="#author">Stalin, Josef</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
 		<dc:contributor id="artist">Isaak Brodsky</dc:contributor>
 		<meta property="file-as" refines="#artist">Brodsky, Isaak</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">Carl Kavanagh</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Kavanagh, Carl</meta>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">ann</meta>
 		<dc:contributor id="transcriber-2">MortgageHunter</dc:contributor>
 		<meta property="file-as" refines="#transcriber-2">MortgageHunter</meta>
 		<meta property="se:url.homepage" refines="#transcriber-2">https://github.com/MortgageHunter</meta>
