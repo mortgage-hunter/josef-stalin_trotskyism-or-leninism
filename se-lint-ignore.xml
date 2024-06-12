@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path=".gitignore">
+		<ignore>
+			<code>f-008</code>
+			<reason>File unrelated to the book.</reason>
+		</ignore>
+	</file>
+  <file path="workflows">
+		<ignore>
+			<code>f-008</code>
+			<reason>File unrelated to the book.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
