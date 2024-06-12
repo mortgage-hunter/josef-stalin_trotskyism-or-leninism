@@ -3,3 +3,6 @@
 Thumbs.db
 src/epub/images/cover.svg
 src/epub/images/titlepage.svg
+**/*.epub
+**/*.kepub.epub
+**/*.kepub
