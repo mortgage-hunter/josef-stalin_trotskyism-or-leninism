@@ -24,7 +24,7 @@ jobs:
 
           python3 -m pip install --user pipx
           python3 -m pipx ensurepath
-          pipx install standardebooks
+          pipx install 'standardebooks==2.6.4'
 
       # - name: "🔎 lint"
 
