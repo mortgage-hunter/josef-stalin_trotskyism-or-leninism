@@ -20,7 +20,7 @@ jobs:
 
       - name: "⚙ environment"
         run: |
-          sudo apt-get install -y libcairo2
+          sudo apt-get install -qq libcairo2
 
           python3 -m pip install --user pipx
           python3 -m pipx ensurepath
@@ -34,7 +34,7 @@ jobs:
       - name: "✂ build image"
         run: se build-images.
 
-      - name: "🔧 build"
+      - name: "🔧 build book"
         run: |
           se build --kobo .
         env:
