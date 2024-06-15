@@ -22,12 +22,18 @@ jobs:
         run: |
           sudo apt-get install -qq libcairo2
 
-          python3 -m pip install --user pipx
+          python3 -m pip install -q --user pipx
           python3 -m pipx ensurepath
           pipx install 'standardebooks==2.6.4'
 
+      - name: debug
+        run: |
+          ls -la
+      
+      - name: debug2
+        run: se build-manifest .
+
       - name: "🔎 lint"
-        id: get_errors
         run: |
           se lint .
 
@@ -37,8 +43,6 @@ jobs:
       - name: "🔧 build book"
         run: |
           se build --kobo .
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
 
       - name: "🚀 release" 
         uses: softprops/action-gh-release@v2
@@ -49,3 +53,5 @@ jobs:
           make_latest: true
           # body_path: CHANGELOG.md
           files: "*.epub"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
