@@ -6,10 +6,22 @@
 			<reason>File unrelated to the book.</reason>
 		</ignore>
 	</file>
-  <file path="workflows">
+	<file path="workflows">
 		<ignore>
 			<code>f-008</code>
 			<reason>File unrelated to the book.</reason>
+		</ignore>
+	</file>
+	<file path="endnotes-stalin.xhtml">
+		<ignore>
+			<code>s-023</code>
+			<reason>Title case is correct, because it's a name abbreviation.</reason>
+		</ignore>
+	</file>
+	<file path="endnotes.xhtml">
+		<ignore>
+			<code>t-065</code>
+			<reason>Header ending in period because of the abbreviation.</reason>
 		</ignore>
 	</file>
 </se-lint-ignore>

@@ -29,15 +29,7 @@ jobs:
       - name: "🔎 lint"
         id: get_errors
         run: |
-          se lint . > /tmp/lint_result.txt
-          ERROR_COUNT=$(grep -Ec "Error|Manual Review" /tmp/lint_result.txt) >> $GITHUB_OUTPUT
-    
-      - name: "🚫 verify lint"
-        if: ${{ steps.get_errors.outputs.ERROR_COUNT > 0 }}
-        uses: actions/github-script@v3
-        with:
-          script: |
-              core.setFailed('the publication contains errors. Check it and try again')
+          se lint .
 
       - name: "✂ build image"
         run: se build-images.
