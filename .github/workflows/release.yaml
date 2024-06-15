@@ -26,19 +26,12 @@ jobs:
           python3 -m pipx ensurepath
           pipx install 'standardebooks==2.6.4'
 
-      - name: debug
-        run: |
-          ls -la
-      
-      - name: debug2
-        run: se build-manifest .
-
       - name: "🔎 lint"
         run: |
           se lint .
 
       - name: "✂ build image"
-        run: se build-images.
+        run: se build-images .
 
       - name: "🔧 build book"
         run: |
