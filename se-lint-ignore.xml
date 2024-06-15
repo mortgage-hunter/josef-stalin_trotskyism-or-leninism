@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
+	<file path="*">
+		<ignore>
+			<code>x-020</code>
+			<reason>I really don't understand what this error is telling me.</reason>
+		</ignore>
+		<ignore>
+			<code>m-047</code>
+			<reason>Ignored because of the above.</reason>
+		</ignore>
+	</file>
+	<file path="colophon.xhtml">
+		<ignore>
+			<code>m-035</code>
+			<reason>I don't understand where this identifier is coming from, but I'm guessing it's for the lack of S.E. URLs.</reason>
+		</ignore>
+	</file>
 	<file path=".gitignore">
 		<ignore>
 			<code>f-008</code>
@@ -12,10 +28,14 @@
 			<reason>File unrelated to the book.</reason>
 		</ignore>
 	</file>
-	<file path="endnotes-stalin.xhtml">
+	<file path="stalin-endnotes.xhtml">
 		<ignore>
 			<code>s-023</code>
 			<reason>Title case is correct, because it's a name abbreviation.</reason>
+		</ignore>
+		<ignore>
+			<code>x-019</code>
+			<reason>I had to use non-complying IDs to keep the author's own notes separated.</reason>
 		</ignore>
 	</file>
 	<file path="endnotes.xhtml">
