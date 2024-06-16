@@ -23,7 +23,7 @@ jobs:
           sudo apt-get install -qq libcairo2
 
           python3 -m pip install -q --user pipx
-          python3 -m pipx ensurepath
+          python3 -m pipx ensurepath --force
           pipx install 'standardebooks==2.6.4'
 
       - name: "🧹 clean and formatting"
@@ -36,9 +36,7 @@ jobs:
 
       - name: "✂ build image"
         run: |
-          touch ./src/epub/images/cover.svg
-          touch ./src/epub/images/titlepage.svg
-          se build-images .
+          se build-images --verbose .
 
       - name: "🔧 build book"
         run: |
