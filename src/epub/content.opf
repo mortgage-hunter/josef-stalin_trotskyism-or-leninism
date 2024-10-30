@@ -4,8 +4,8 @@
 		<dc:identifier id="uid">josef-stalin/trotskyism-or-leninism</dc:identifier>
 		<dc:identifier id="url">url:https://github.com/MortgageHunter/josef-stalin_trotskyism-or-leninism</dc:identifier>
 		<dc:date>2024-06-11T22:48:00Z</dc:date>
-		<meta property="dcterms:modified">2024-06-15T19:09:00Z</meta>
-		<dc:rights>This ebook is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3</a>.</dc:rights>
+		<meta property="dcterms:modified">2024-10-30T21:12:53Z</meta>
+		<dc:rights>This ebook is under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</dc:rights>
 		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
 		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com</meta>
@@ -60,13 +60,13 @@
 		<item href="text/chapter-2.xhtml" id="chapter-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/chapter-3.xhtml" id="chapter-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/copyleft.xhtml" id="copyleft.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/stalin-endnotes.xhtml" id="stalin-endnotes.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
-		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
 	</manifest>
 	<spine>
@@ -80,6 +80,6 @@
 		<itemref idref="stalin-endnotes.xhtml"/>
 		<itemref idref="endnotes.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
-		<itemref idref="uncopyright.xhtml"/>
+		<itemref idref="copyleft.xhtml"/>
 	</spine>
 </package>
